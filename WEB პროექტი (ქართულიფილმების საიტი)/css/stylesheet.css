@@ -1,0 +1,819 @@
+*{
+	margin:0;
+	padding: 0;
+}
+html,body
+{
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+@font-face {
+	font-family: 'BPG_Arial_2010';
+	src: url('../fonts/BPG_Arial_2010.eot');
+	src: url('../fonts/BPG_Arial_2010.ttf') format('truetype'), url('../fonts/BPG_Arial_2010.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{	background: linear-gradient(#66a3ff , #0059b3) fixed;  /*background-color: #66a3ff;*/	}
+
+.active{
+	color: rgba(255,0,0,0.6);
+}
+/*----------------------------------------------------header--------------------------------------------------------------*/
+.everything {
+	width: 92%;
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: white;
+
+}
+
+header:after
+{
+	vertical-align: middle;
+}
+
+header
+{
+	width: 100%;
+	height: 90px;
+	margin:0 auto;
+	background-color: white;
+}
+
+header ul{
+	width: 15%;
+	padding-top: 17px;
+	float: right;}
+header ul li
+{
+	display: inline-block;
+	list-style-type: none;
+	padding-left:11px;
+}
+
+.saitis_shesaxeb{
+	width: 85%;
+	float: left; 
+	padding-top: 17px;
+}
+
+.saitis_shesaxeb a {
+	text-decoration: none;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.saitis_shesaxeb a:hover{color: #4CAF50; }
+
+.saitis_shesaxeb .color_green
+{
+	color: #4CAF50;
+}
+
+.saitis_shesaxeb .ubralod
+{
+	word-spacing: 2px;
+	font-size: 30px;
+}
+
+/*----------------------------------------------EndOfHeader--------------------------------------------------------------*/
+
+
+/*----------------------------------------------------nav--------------------------------------------------------------*/
+nav
+{
+	width: 100%;
+	height: 50px;
+	margin:0 auto;
+	background-color: #404040;
+	box-sizing: border-box;
+}
+nav ul {
+	float: left;
+	overflow: hidden;
+}
+nav ul li{
+	margin-left:-5px;
+	display: inline-block;
+	padding-top: 16px;
+	padding-right: 9px;
+	padding-bottom: 16px;
+	padding-left: 9px;
+	font-family: BPG_Arial_2010;
+	box-sizing: border-box;
+	border-right: 1px 	hsl(15, 100%, 10%) solid;
+
+}
+nav ul li:hover {	background-color: rgba(204,204,204,0.3);	}
+nav ul li a:hover {	color: white;	}
+nav ul li a {	color: #CCCCCC;	}	
+
+/*----------------------------------------------------EndOfNav--------------------------------------------------------------*/
+
+/*----------------------------------------------------Content--------------------------------------------------------------*/
+content {
+	width: 100%;
+	display: block;
+	padding-bottom: 97px;
+}
+
+/*----------------------------------------------------rightContent--------------------------------------------------------------*/
+
+
+content .rightContent
+{
+
+	width: 30%;
+	height: 420px;
+	float: right;
+	background-color: white;
+}
+content .rightContent h2
+{
+	text-align: center;
+}
+
+content .rightContent ul li
+{
+	font-size: 20px;
+	border:1px solid lightblue;
+	margin:8px 60px 8px 60px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	box-shadow: 3px 1px 3px 1px #9966ff;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+content .rightContent #i_should_hide_or_show_this
+{
+	width: 80%;
+	margin: 0 auto;
+	padding:10px;
+	font-size: 20px;
+	color:#0A2A66;
+	border:3px solid yellow;
+	box-shadow: 5px 5px 3px 2px #0A2A66;
+}
+
+button#hide, button#show
+{
+	margin-top: 20px;
+	width: 100px;
+	height: 40px;
+	border-radius: 8px;
+	transition: background-color 0.2s linear;
+	text-align: center;
+}
+
+/*button#hide
+{
+		margin-left: : 50px;
+}*/
+
+button#hide:hover
+{
+	background-color: lightgrey;
+}
+
+button#show:hover
+{
+	background-color: lightgrey;
+}
+
+/*content .rightContent button #show
+{
+	width: 100px;
+}*/
+
+
+/*content .rightContent ul li a.udzinarta_mze:hover {
+	 color: #333333;
+	 padding-left: 14px;
+ 	 background:transparent url(../images/udzinarta_mze.jpg) center top no-repeat;
+	 background-position: 0 -111px;
+	 background-repeat: no-repeat;
+ 
+}*/
+
+content .rightContent ul li a {color:  indigo;}
+
+/*----------------------------------------------------EndOfRightContent--------------------------------------------------------------*/
+/*----------------------------------------------------LeftContent--------------------------------------------------------------*/
+content .leftContent
+{
+
+	width: 70%;
+	height: 420px;
+	float: left;
+	background-color: white;
+/*	border-right: 1px solid black;*/
+	box-sizing: border-box;
+}
+content .leftContent h2 {
+	text-align: center;
+}
+
+content .leftContent p
+{
+	text-indent: 30px;
+	text-align:justify; 
+	padding: 2px 10px 2px 10px;
+}
+
+content .leftContent .fotoebi_gayolebaze
+{
+	width: 13.7%;
+	padding-top: 4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	box-sizing: border-box;
+
+}
+content .leftContent img:first-of-type
+{
+	margin-left: 3px;
+}
+
+/*----------------------------------------------------EndOfLeftContent--------------------------------------------------------------*/
+/*----------------------------------------------------EndOfContent--------------------------------------------------------------*/
+
+/*----------------------------------------------------Footer--------------------------------------------------------------*/
+
+
+footer
+{ 
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	max-height: 97px;
+	background-image: linear-gradient(to bottom, #80ffff , white);
+	margin-top: -560px;
+}
+
+footer .footer_top_content
+{
+	width: 100%;
+	height: 55px;
+	text-align: center;
+}
+
+footer .footer_top_content ul {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 20px;
+}
+
+footer .footer_top_content ul li { list-style-type: circle;}
+
+footer .footer_top_content ul li a { color:black; }
+/*footer .footer_top_content ul li a: hover
+{
+	color: grey;
+	text-decoration: underline;
+}*/
+
+
+footer .footer_bottom_content
+{
+	width: 100%;
+	height: 43px;
+	border-top: 1px dashed black;
+	padding-top: 10px;
+	font-size: 14px;
+	color: #0A2A66;
+	box-sizing: border-box;
+}
+
+footer .footer_bottom_content .company {color: #8295BA;}
+
+footer .footer_bottom_content .footer_bottom_right_content{
+	float:right;
+}
+footer .footer_bottom_content .footer_bottom_right_content ul li
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	display: inline-block;
+}
+
+/*----------------------------------------------------galerea--------------------------------------------------------------*/
+.everything_galerea
+{
+	width: 92%;
+	height:140px;
+	margin: 0 auto;
+	background-color: white;
+}
+section
+{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+section ul
+{
+	width: 92%;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	display: flex;
+
+}
+
+section ul li
+{
+	list-style: none;
+	width: 20%;
+}
+
+section ul li a
+{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.5s;
+	font-family: sans-serif;
+}
+
+section ul li a:hover
+{
+	background-color: lightblue;
+	color: #000;
+}
+
+section img
+{
+	position: absolute;
+	top: 0;
+	left: 4%;
+	width: 92%;
+	margin: 0 auto;
+	height: 100%;
+	z-index: -2;
+	transition: 0.5s;
+	opacity: 0;
+
+
+}
+
+@keyframes animate
+{
+	0%
+	{
+		transform: scale(1);
+	}
+	100%
+	{
+		transform: scale(2);
+	}
+}
+
+section ul li a:hover + img
+{
+	opacity: 1;
+	animation: animate 20s linear forwards;
+}
+
+section ul li:nth-child(1) a + img
+{
+	opacity: 1;
+}
+/*----------------------------------------------------EndOfGalery--------------------------------------------------------------*/
+
+/*----------------------------------------------------rejisorebi--------------------------------------------------------------*/
+.chamosashleli {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.chamosashleli:hover {
+  background-color: #ccc;
+}
+
+.rejisorebi_info {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+/*----------------------------------------------------EndOfrejisorebi--------------------------------------------------------------*/
+
+/*----------------------------------------------------kontaqti--------------------------------------------------------------*/
+.form{
+	width: 100%;
+	padding-bottom: 97px;
+	display: block;
+	box-sizing: border-box;
+}
+
+.form h2 {text-align: center;}
+
+.form .shuashi_forma
+{
+	width: 40%;
+	height: 420px;
+	margin: 0 auto;
+	background-color: yellow;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+}
+
+
+input
+{
+	margin: 5px;
+	padding:5px;
+	font-size: 16px;
+	transition: background 1s;
+
+}
+input:focus, textarea:focus
+{
+	background-color: lightgrey;
+	border:1px solid #a2bafa;
+
+}
+
+input[type=email]
+{
+	margin-left: 30px;
+}
+input[type=email]
+{
+	text-align:left;
+}
+input[name=clear]
+{
+	padding: 5px 37px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 1px black;
+	cursor: pointer;
+}
+
+input[name=submit]
+{
+	padding: 5px 37px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 1px black;
+	cursor: pointer;
+}
+
+/*----------------------------------------------------EndOfkontaqti--------------------------------------------------------------*/
+
+/*----------------------------------------------------chvens_shesaxeb--------------------------------------------------------------*/
+
+.animaciis_kontieneri {text-align: center;}
+.anim
+{
+	width: 70px;
+	height: 70px;
+	padding: 5px;
+	margin-top: 10px;
+	display: inline-block;
+	background-color: red;
+	opacity: 0.5;
+	animation: test 3s infinite;
+}
+.anim:first-of-type
+{
+	margin-left: 10px;
+}
+
+.anim:nth-of-type(2)
+{
+	background-color: lightblue;
+}
+
+.anim:nth-of-type(3)
+{
+	background-color: #1affc6;
+}
+
+.anim:nth-of-type(4)
+{
+	background-color: #ffff1a;
+}
+
+.anim:nth-of-type(5)
+{
+	background-color: #ff944d;
+}
+
+.anim:nth-of-type(6)
+{
+	background-color: #8080ff;
+}
+
+.anim:nth-of-type(7)
+{
+	background-color: indigo;
+	animation: none;
+	border-radius: 38px;
+}
+
+.anim:nth-of-type(8)
+{
+	background-color: #8080ff;
+	animation: test1 3s infinite;
+}
+.anim:nth-of-type(9)
+{
+	background-color: #ff944d;
+	animation: test1 3s infinite;
+}
+.anim:nth-of-type(10)
+{
+	background-color: #ffff1a;
+	animation: test1 3s infinite;
+}
+.anim:nth-of-type(11)
+{
+	background-color: #1affc6;
+	animation: test1 3s infinite;
+}
+.anim:nth-of-type(12)
+{
+	background-color: lightblue;
+	animation: test1 3s infinite;
+}
+.anim:nth-of-type(13)
+{
+	animation: test1 3s infinite;
+}
+
+@keyframes test 
+{
+	0%
+	{
+		transform: rotate(0);
+	}
+
+	50%
+	{
+		transform: rotate(100deg);
+	}
+
+	100%
+	{
+		transform: rotate(360deg);
+	}
+
+}
+
+@keyframes test1 
+{
+	0%
+	{
+		transform: rotate(0);
+	}
+
+	50%
+	{
+		transform: rotate(-100deg);
+	}
+
+	100%
+	{
+		transform: rotate(-360deg);
+	}
+
+}
+
+
+.about_us_content
+{
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 20px;
+}
+.about_us_content p {text-indent: 35px;}
+
+
+.morbenali_ragac
+{
+	margin-top: 100px;
+	width: 100%;
+	height: 50px;
+	line-height: 23px;
+}
+
+.morbenali_ragac .rac_darbis
+{	
+	position: relative;
+	line-height: 23px;
+	vertical-align: middle;
+	text-align: center;
+	width: 120px;
+	height: 30px;
+	background-color: lightgrey;
+	font-size: 20px;
+	border-radius: 10px;
+	animation: morbenali_striqoni 3s infinite;
+}
+
+
+
+
+@keyframes morbenali_striqoni
+{	
+	0%
+	{
+		transform: rotate(0deg);
+		left: 10px;
+	}
+
+
+	100% 
+	{
+	    transform: rotate(-360deg);
+	    left: 87%;
+	}
+}
+
+
+
+/*----------------------------------------------------EndOf_chven_sheasxeb--------------------------------------------------------------*/
+/*----------------------------------------------------responsiuoba--------------------------------------------------------------*/
+
+@media screen and (max-width:1920px){
+	body
+	{
+		background: linear-gradient(#66a3ff , #ff944d) fixed;
+	}
+}
+
+@media screen and (max-width:1366px){
+	body
+	{
+		background: linear-gradient(#66a3ff , #0059b3) fixed;
+	}
+}
+@media screen and (max-width:1024px){
+	body
+	{
+		background: linear-gradient(#66a3ff , #0059b3) fixed;
+	}
+}
+@media screen and (max-width:1024px)
+{
+	nav ul li{
+	margin-left:-5px;
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 5.5px;
+	padding-bottom: 10px;
+	padding-left: 5.5px;
+	font-size: 10px;
+	box-sizing: border-box;
+	border-right: 1px 	hsl(15, 100%, 10%) solid;
+
+	}
+
+	section ul li a
+	{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width:768px){
+	body
+	{
+		background: linear-gradient(#66a3ff , #ff944d) fixed;
+	}
+	content .rightContent
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+	content .leftContent
+	{
+		width: 100%;
+		overflow: hidden;
+
+	}
+	.saitis_shesaxeb .ubralod
+	{
+		font-size: 15px;
+	}
+	.saitis_shesaxeb a 
+	{
+		font-size: 20px;
+	}
+	header ul li
+	{
+		width: 20px;
+	}
+
+}
+@media screen and (max-width:1121px)
+{
+		content .leftContent
+		{
+			font-size: 12px;
+		}
+		.saitis_shesaxeb .ubralod
+		{
+			font-size: 15px;
+		}
+		.saitis_shesaxeb a 
+		{
+			font-size: 25px;
+		}
+}
+@media print{
+	nav{
+		display: none;
+	}
+	footer{
+		display: none;
+	}
+}
+@media screen and (max-width:480px){
+	body
+	{
+		background: linear-gradient(#66a3ff , #ffff1a) fixed;
+	}
+	.saitis_shesaxeb a 
+	{
+		font-size: 15px;
+	}
+}
+
+/*----------------------------------------------------EndOf_responsiuloba--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------BACKEND_Project--------------------------------------------------------------*/
+/*----------------------------------------------------registration.php--------------------------------------------------------------*/
+

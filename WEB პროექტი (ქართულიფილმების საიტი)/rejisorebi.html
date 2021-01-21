@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>რეჟისორები</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<meta name="description" content="ქართული კინემატოგრაფიის მოყვარულთა საიტი">
+	<meta name="keywords" content="ქართული, კინემატოგრაფია, გალერეა, ქართველი რეჟისორები">
+	<meta name="author" content="გიორგი დოღაძე">
+	<link rel="icon" href="images\lika_qavjaradze_icon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="JavaScreapt/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="everything">
+	<header>
+		<div class="saitis_shesaxeb">
+			<a href = "index.html">Geomovies<span class="color_green">.ge </span></a> 
+			<span class="ubralod"> - უბრალოდ საიტი კინომოყვარულთათვის </span>
+		</div>
+		<ul>
+			<li><a href="#"><img src="images\geo.gif" alt= "georgian" title="ქართული"></a></li>
+			<li><a href="#"><img src="images\eng.gif" alt= "english" title="English"></a></li>
+			<li><a href="#"><img src="images\rus.gif" alt= "russian" title="Occupant"></a></li>
+		</ul>
+	</header>
+
+
+
+	<nav>
+		<ul>
+			<li><a href = "#">ფილმები</a></li>
+			<li><a href = "#">მსახიობები</a></li>
+			<li><a href = "rejisorebi.html" class="active">რეჟისორები</a></li>
+			<li><a href = "galerea.html">ფოტო გალერეა</a></li>
+			<li><a href = "kontaqti.html">კონტაქტი</a></li>
+			<li><a href = "chven_shesaxeb.html">ჩვენ შესახებ</a></li>
+		</ul>
+
+	</nav>
+
+
+
+	<content>
+		<div class="leftContent">
+			<button class="chamosashleli">რეზო  ჩხეიძე (დააჭირეთ ჩამოსაშლელად)</button>
+			<div class="rejisorebi_info">
+			  <p>რევაზ (რეზო) დავითის ძე ჩხეიძე (დ. 8 დეკემბერი, 1926, ქუთაისი — გ. 3 მაისი, 2015, თბილისი) — ქართველი კინორეჟისორი, საქართველოს სახალხო არტისტი, სსრკ სახალხო არტისტი (1980), პროფესორი.მას ეკუთვნის ისეთ დიდებული ფილმები როგორებიცაა: მაგდანას ლურჯა, მაია წყნეთელი, ჯარისკაცის მამა ღიმილის ბიჭები და კიდევ მრავალი დაუვიწყარი ფილმი.</p>
+			</div>
+
+
+			<button class="chamosashleli">ელდარ შენგელაია (დააჭირეთ ჩამოსაშლელად)</button>
+			<div class="rejisorebi_info">
+			  <p>ელდარ შენგელაია (დ. 26 იანვარი, 1933, თბილისი) — კინორეჟისორი, რომელიც გამოირჩევა განსაკუთრებული ხედვით და შესანიშნავად გვაჩვენებდა სიტუაციის კომედიულობა თუ გროტესკულობა, ტრაგიკულობა თუ დრამატულობა. მას ეკუთხვნის ისეთ შესანიშნავი ფილმები როგორებიცაა: არაჩვეულებრივი გამოფენა, შერეკილები, სამანიშვილის დედინაცვალი, ცისფერი მთები ანუ დაუჯერებელი ამბავი და კიდევ მრავალი სხვა.</p>
+			</div>
+
+			<button class="chamosashleli">გიორგი შენგელაია (დააჭირეთ ჩამოსაშლელად)</button>
+			<div class="rejisorebi_info">
+			  <p>გიორგი შენგელაია (დ. 11 მაისი, 1937, მოსკოვი — გ. 17 თებერვალი, 2020,[1] თბილისი) — ქართველი მსახიობი, კინორეჟისორი და სცენარისტი. რუსთაველის პრემიის ლაურეატი, საქართველოს სახალხო არტისტი. რეჟისორ ელდარ შენგელაიას ძმა. მისმა გარდაცვალებამ მრავალ ქართველს ატკინა გული, რადგან მისი შექმნილი ფილმები კლასიკაა და კიდევ მრავლა თაობას აღზრდის, მაგალითად როგორებიცაა: ალავერდობა ვერის უბნის მელოდიები, სიყვარული ყველას უნდა, ხარება და გოგია, მიდიოდა მატარებელი და ა.შ</p>
+			</div>
+
+			<script>
+				var cha = document.getElementsByClassName("chamosashleli");
+				var i;
+
+				for (i = 0; i < cha.length; i++) 
+				{
+				  cha[i].addEventListener("click", function() ///addEventListener ამატებსფუნქციას ისე რო  არაფერს ცვლის
+				  {
+				    var rejisorebi_info = this.nextElementSibling;
+				    if (rejisorebi_info.style.maxHeight)
+				     {
+				      rejisorebi_info.style.maxHeight = null;
+				    } else 
+				    {
+				      rejisorebi_info.style.maxHeight = rejisorebi_info.scrollHeight + "px";
+				    } 
+				  });
+				}
+			</script>
+
+
+		</div>
+
+
+		<div class="rightContent">
+			<p id="i_should_hide_or_show_this">აქ მე შევეცადე რომ ამ სამი გენიელური რეჟისორის მოკლე  ბიოგრფია მეჩვენებინა,რადგან ქართული კინო ქართველი ერის ცხოვრების ამონაძახია და ამ ბრწყინვალე რეჟისორებმა შესანიშნავად გადმოგვცეს ეს ქართული სული, იმედია ისიამოვნეთ :)</p>
+
+			<button id="hide">დამალვა</button>
+			<button id="show">ჩვენება</button>
+
+			<script>
+				$(document).ready(function()
+				{
+				  $("#hide").click(function()
+				  {
+				    $("#i_should_hide_or_show_this").hide(1000);
+				  });
+				  $("#show").click(function()
+				  {
+				    $("#i_should_hide_or_show_this").show(1000);
+				  });
+				});
+			</script>
+
+		</div>
+	</content>
+
+
+	
+	<footer>
+		<div class="footer_top_content">
+			<ul>
+				<li><a href="#">ჩვენი გუნდი</a></li>
+				<li><a href="#">ვაკანსიები</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#">ჩვენი მხარდამჭერები</a></li>
+				<li><a href="#">ჩვენი თანამშრომლები</a></li>
+			</ul>
+		</div>
+
+
+
+		<div class="footer_bottom_content">
+				<span class="company">© 2020 Geomovies.ge</span> &nbsp &nbsp გამოყენების პირობები &nbsp &nbsp კონფიდენციალურობის პოლიტიკა
+			<div class="footer_bottom_right_content">
+				<ul>
+					<li><a href="#"><img src="images\fb.png" alt= "facebook" title="facebook"></a></li>
+					<li><a href="#"><img src="images\inst.png" alt= "instagram" title="instagram"></a></li>
+					<li><a href="#"><img src="images\yt.png" alt= "youtube" title="youtube"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
+

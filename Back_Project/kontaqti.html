@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>კონტაქტი</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<meta name="description" content="ქართული კინემატოგრაფიის მოყვარულთა საიტი">
+	<meta name="keywords" content="ქართული, კინემატოგრაფია, კონტაქტი">
+	<meta name="author" content="გიორგი დოღაძე">
+	<link rel="icon" href="images\lika_qavjaradze_icon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+<div class="everything">
+	<header>
+		<div class="saitis_shesaxeb">
+			<a href = "index.html">Geomovies<span class="color_green">.ge </span></a> 
+			<span class="ubralod"> - უბრალოდ საიტი კინომოყვარულთათვის </span>
+		</div>
+		<ul>
+			<li><a href="http://localhost/Back_Project/registration.php">რეგისტრაცია</a></li>
+			<li><a href="#"><img src="images\geo.gif" alt= "georgian" title="ქართული"></a></li>
+		</ul>
+	</header>
+
+
+
+	<nav>
+		<ul>
+			<li><a href = "#">ფილმები</a></li>
+			<li><a href = "#">მსახიობები</a></li>
+			<li><a href = "rejisorebi.html">რეჟისორები</a></li>
+			<li><a href = "galerea.html">ფოტო გალერეა</a></li>
+			<li><a href = "kontaqti.html" class="active">კონტაქტი</a></li>
+			<li><a href = "chven_shesaxeb.html">ჩვენ შესახებ</a></li>
+		</ul>
+
+	</nav>
+
+
+
+	<div class="form">
+		<div class="shuashi_forma">
+
+		<h2>დატოვეთ გამოხმაურება</h2>
+
+		<label for="user"></label> Username: 
+		<input type="text" name="user" placeholder="შეიყვანეთ თქვენი სახელი"> <br>
+
+		<label>E-mail:</label>
+		<input type="email" name="user" placeholder="შეიყვანეთ თქვენი ელ-ფოსტა"><br>
+
+		<textarea cols="39" rows="11" placeholder = "დატოვეთ კომენტარი">
+		</textarea> <br>
+
+		<label for="shepaseba">შეაფასეთ ეს გვერდი</label>
+
+		<select name="shepaseba" id="shepaseba">
+		  <option value="ძალიან მომეწონა">ძალიან მომეწონა</option>
+		  <option value="მომეწონა">მომეწონა</option>
+		  <option value="არი რა">არი რა</option>
+		  <option value="არ  მომეწონა">არ  მომეწონა</option>
+		  <option value="ძალიან არ მომეწონა">ძალიან არ მომეწონა</option>
+		</select>
+		<br>
+
+		<input type="button" name="clear" value="გაწმენდა">
+		<input type="submit" name="submit" value="გაგზავნა" onclick="alert_function()">
+
+		<script>
+			function alert_function() 
+			{
+	  			alert("მადლობა გამოხმაურებისთვის <3");
+			}
+		</script>
+
+		</div>
+	</div>
+
+
+	
+	<footer>
+		<div class="footer_top_content">
+			<ul>
+				<li><a href="#">ჩვენი გუნდი</a></li>
+				<li><a href="#">ვაკანსიები</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#">ჩვენი მხარდამჭერები</a></li>
+				<li><a href="#">ჩვენი თანამშრომლები</a></li>
+			</ul>
+		</div>
+
+
+
+		<div class="footer_bottom_content">
+				<span class="company">© 2020 Geomovies.ge</span> &nbsp &nbsp გამოყენების პირობები &nbsp &nbsp კონფიდენციალურობის პოლიტიკა
+			<div class="footer_bottom_right_content">
+				<ul>
+					<li><a href="#"><img src="images\fb.png" alt= "facebook" title="facebook"></a></li>
+					<li><a href="#"><img src="images\inst.png" alt= "instagram" title="instagram"></a></li>
+					<li><a href="#"><img src="images\yt.png" alt= "youtube" title="youtube"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
